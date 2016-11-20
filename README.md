@@ -1,2 +1,1 @@
-# myfirst
-My first windows git
+This is a GitHub tutorial for beginner. 
