@@ -1,0 +1,128 @@
+
+1) build your repository first and git clone to the local folder.
+
+$ git clone ....git
+
+directly initialize the local git
+
+2) 初始化git
+
+$ git config --global user.name "<用户名>"
+$ git config --global user.email "<电子邮件>"
+
+以下命令能让Git以彩色显示。
+
+$ git config --global color.ui auto
+
+您可以为Git命令设定别名。例如：把「checkout」缩略为「co」，然后就使用「co」来执行命令。
+
+$ git config --global alias.co checkout
+
+3）建立本地git数据库
+
+首先在任意一个地方创建tutorial目录。然后使用init命令把该tutorial目录移动到本地Git数据库。
+
+$ git init
+
+按照以下步骤把新创建的tutorial目录设置到Git数据库。
+
+4）使用status命令确认工作树和索引的状态。
+
+$ git status
+
+5) how to add files
+
+ git add file
+ git commit -m "Adding files"
+ git status
+ git push origin master
+
+6) how to delete files
+
+  git rm file
+  git commit -m "Deleting files"
+  git status
+  git push origin master
+
+  to delete and add together
+	
+  git add file1
+  git rm file2
+  git commit -m "deleting and adding files"
+  git push origin master
+
+7) how to delete a branch
+
+Manually enter the URL for your repository's Settings page in your browser:
+	https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/settings
+Repository deletion buttonUnder Danger Zone, click Delete this reposit
+
+8) how to add a git repository
+
+9) git pull origin master
+
+10) git push
+
+11) git status
+
+git add .
+
+12) let you git know the remote git so you can push your files to
+
+	git remote add origin htt0://github.ericwang915.git
+ 	when you do "git clone", the original file is already there.
+
+13) if the file is totally a new file
+
+make your current folder as a git:
+	git init
+
+see the status of the git:
+
+	git status
+
+add the file to the git:
+
+	git add  1.jpg
+
+commit the file:
+
+	git commit -m "add the file"
+
+let the created git know the main git
+
+	git remote add origin http://
+
+	git remote -v
+
+push your file:
+
+	git push origin master
+
+14) generate a new branch
+
+	git branch newbranch
+	git checkout newbranch
+	git merge master
+        git push origin master
+	git push origin newbranch
+	git diff newbranch master
+	git fetch origin
+	git pull origin master --allow-unrelated-histories
+15) delete a branch
+	git branch -d (-D) newbranch
+	git push origin :newbranch
+
+16) change the remote name:
+	git remote rm origin
+	git remote rename origin destination
+
+
+
+
+
+
+
+
+
+
